@@ -1,4 +1,4 @@
-#**Final Project for Skylab Coders bootcamp pre-course
+#**Final Project for Skylab Coders bootcamp pre-course**#
 
 ####***You can try the game here (https://asierdev.github.io/Pasapalabra_HTML-CSS-JS/)
 
