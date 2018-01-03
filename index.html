@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+ 
+<html lang="es">
+ 
+<head>
+<title>Pasapalabra</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style.css" />
+<link rel="icon" href="images/ico.ico" />
+
+</head>
+ 
+<body>
+    <header>
+      
+      
+    </header>
+    
+    <div id="game">
+        
+        <h1>Pasapalabra</h1>
+
+        <main id="container">
+         
+            <ul id="rosco">
+                <li id="lA" class="letters">A</li>    
+                <li id="lB" class="letters">B</li>    
+                <li id="lC" class="letters">C</li>    
+                <li id="lD" class="letters">D</li>    
+                <li id="lE" class="letters">E</li>    
+                <li id="lF" class="letters">F</li>    
+                <li id="lG" class="letters">G</li>    
+                <li id="lH" class="letters">H</li>    
+                <li id="lI" class="letters">I</li>    
+                <li id="lJ" class="letters">J</li>    
+                <li id="lK" class="letters">K</li>    
+                <li id="lL" class="letters">L</li>    
+                <li id="lM" class="letters">M</li>    
+                <li id="lN" class="letters">N</li>    
+                <li id="lÑ" class="letters">Ñ</li>    
+                <li id="lO" class="letters">O</li>    
+                <li id="lP" class="letters">P</li>    
+                <li id="lQ" class="letters">Q</li>    
+                <li id="lR" class="letters">R</li>    
+                <li id="lS" class="letters">S</li>    
+                <li id="lT" class="letters">T</li>    
+                <li id="lU" class="letters">U</li>    
+                <li id="lV" class="letters">V</li>    
+                <li id="lW" class="letters">W</li>    
+                <li id="lX" class="letters">X</li>    
+                <li id="lY" class="letters">Y</li>    
+                <li id="lZ" class="letters">Z</li>    
+            </ul>
+      
+         </main>
+
+        <div id="centerRosco">
+                
+                <h3 id="askQuestion">Introduce las respuestas (sin acentos) mientras quede tiempo. El objetivo es completar el rosco con  los menos fallos posibles. <br> </h3>
+
+                <div id="playagain"> 
+                    <button id="startGame"> Start </button> 
+                    
+                    <div id="showQuestions"> 
+                        <form id="ansForm" onsubmit="return false">
+                            <input id="answer" type="text" autocomplete="off">
+                            <button id="sendAnswer">Enviar</button>
+                            <button id="skipWord"> Pasapalabra  </button>   
+                        </form>
+                    </div>
+
+                    <div id="scoreboard">
+                        <label class="switch">
+                            <p id="textSwitch"> Dictado de Preguntas </p>
+                            <input id="talkToMe" type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                        <div id="showTime"> 
+                            <h3>Time</h3>
+                            <p id="time">0</p>
+                        </div> 
+
+                        <div id="showScore">
+                            <h3>Aciertos</h3>
+                            <p id="correct">0</p>  
+                        </div> 
+                    </div>
+                </div>    
+        </div>
+        <!--  This code show up when game is over      -->
+        <div id="showup">
+            <h2 id="gameover">¿Quieres jugar de nuevo?</h2>
+            <button id="wannaplay" onclick="location.reload()">SI</button>
+            <button id="dontwannaplay" onclick="dontPlayAgain()">NO</button>
+        </div>
+    
+     </div>
+
+    <footer>
+    <p>Creado por <a href="https://github.com/AsierDev" target="_blank">Asier</a> for <a href="https://twitter.com/SkylabCoders" target="_blank">@SkylabCoders</a></p>
+    
+    </footer>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

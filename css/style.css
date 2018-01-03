@@ -1,0 +1,398 @@
+body, html {
+    background-color: #F0D5B4;
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color:  #182a48;
+}
+
+a, a:visited  {
+    color: #1025C2;
+    text-decoration: none;
+}
+a:hover {
+    color:crimson;
+}
+
+
+/*the main square*/
+#game {
+    width: 42em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40em;
+}
+
+#container {
+    background: #1025C2;
+    border: solid 2px #182a48;
+    box-shadow: inset 0 0 10px ;
+    border-radius: 1em;
+    display: flex;
+    width: 40em;
+    height: 40em; 
+    position: absolute; 
+}
+
+#rosco {
+    background: #6CBDE8;
+    background: linear-gradient(#91DFEA, #6CBDE8);
+    margin: 1em;
+    width: 100%;
+    border-radius: 1em;   
+}
+
+/*the whole section insede the main square*/
+#centerRosco {
+   position: absolute;
+    margin: 8em 0 0 10em;
+    width: 22em;      
+}
+
+.letters {
+    font-size: 1.5em;  
+    text-align: center;
+    font-weight: bold;
+    border: solid 3px #182a48;
+    border-radius: 50%;
+    padding: 0.5em;
+    width: 1em;
+    background-color: #1025C2;
+    color: white;
+    margin: 0.2em;
+    display: block;
+    box-shadow: inset 0 0 1px ;
+    text-shadow: 1px 1px grey; 
+}
+
+/*questions container*/
+#askQuestion {
+    background-color: antiquewhite;
+    text-align: center;
+    color: #14151F;
+    height: 5em;
+    width: 18em;
+    padding: 3%;
+    padding-top: 5%;
+    box-shadow: inset 0 0 8px ;
+    border-radius: 1.5em;
+    border: solid 1px darkgoldenrod;
+    font-family: cursive;
+}
+
+/*start button*/
+#startGame {
+    box-shadow: inset 0 0 3px ;
+    border-radius: 0.5em;
+    border: solid 1.5px darkgoldenrod;
+    font-family: cursive;
+    padding: 2% 5%;
+    margin-left: 8em;
+    background-color: darkgreen;
+    color: whitesmoke;
+}
+
+
+/*answer field and buttons container*/
+#showQuestions {
+    display: block;
+    width: 95%;        
+}
+#answer {
+    width: 95%;
+    height: 2.5em;
+    margin: 0 2% 2% 2%;
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-style: normal;
+    font-weight: 700;
+    background-color: antiquewhite;
+    box-shadow: inset 0 0 8px ;
+    border-radius: 1em;
+    border: solid 1px darkgoldenrod;
+    text-transform: uppercase;
+    font-family: cursive;
+
+}
+
+#sendAnswer {
+    box-shadow: inset 0 0 3px ;
+    border-radius: 0.5em;
+    border: solid 1.5px darkgoldenrod;
+    font-family: cursive;
+    padding: 1% 3%;
+    margin-left: 3em;
+    background-color: darkgreen;
+    color: whitesmoke;
+}
+
+#skipWord {
+    box-shadow: inset 0 0 3px ;
+    border-radius: 0.5em;
+    border: solid 1.5px darkgoldenrod;
+    font-family: cursive;
+    padding: 1% 3%;
+    margin-left: 2em;
+    background-color: darkred;
+    color: whitesmoke;
+   
+}
+
+/*score, time and switch container*/
+#scoreboard {
+    display: block;
+    position: absolute;
+    width: 20em;
+    z-index: 99;
+    border-radius: 5%;
+    margin-top: 1%;
+}
+
+/*time container*/
+#showTime {
+    float: left;
+    text-align: center;
+    margin: 3% 5% ;
+    background-color:darksalmon;
+    border-radius: 20%;
+    box-shadow: inset 0 0 8px;
+    width: 5em;
+
+}
+#showTime h3 {
+    margin-top: 0.6em;
+}
+
+#time {
+    background-color: antiquewhite;
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+    border-radius: 4em;
+    box-shadow: inset 0 0 8px ;
+    height: 2em;
+    margin-top:  -0.7em;
+    padding-top: 0.8em;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+}
+
+/*correct answers container*/
+#showScore {
+    float: right;
+    text-align: center;
+    margin: 3% 5%;
+    background-color: darksalmon;
+    border-radius: 20%;
+    box-shadow: inset 0 0 8px ;
+    width: 5em;
+}
+#showScore h3 {
+    margin-top: 0.6em;
+}
+#correct {
+    background-color: antiquewhite;
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+    border-radius: 4em;
+    box-shadow: inset 0 0 8px ;
+    height: 2em;
+    margin-top:  -0.7em;
+    padding-top: 0.8em;
+    margin-bottom: 0.5em; 
+    font-weight: 600;
+}
+/*switch to activate TTS*/
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 65px;
+    height: 34px;
+    margin-top: 20%;
+    margin-left: 5%;
+} 
+.switch input {
+    display: none;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: antiquewhite;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+    box-shadow: inset 0 0 3px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  box-shadow: inset 0 0 3px;   
+  -webkit-transition: .4s;
+  transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: darkgreen;
+  box-shadow: inset 0 0 3px;
+}
+
+input:focus + .slider {
+   box-shadow: inset 0 0 3px;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+#textSwitch {
+    margin-top: -45%;
+    color: black;
+    font-weight: 700;
+    font-size: 0.6em; 
+    text-align: center;
+}
+
+#gameover{
+    text-align: center;
+    margin: 1.5em 1em;
+    
+}
+#wannaplay {
+    box-shadow: inset 0 0 5px ;
+    border-radius: 0.5em;
+    border: solid 2px darkgoldenrod;
+    font-family: cursive;
+    padding: 2% 5%;
+    margin-left: 5em;
+    background-color: darkgreen;
+    color: whitesmoke;   
+}
+#dontwannaplay {
+    box-shadow: inset 0 0 3px ;
+    border-radius: 0.5em;
+    border: solid 2px darkgoldenrod;
+    font-family: cursive;
+    padding: 2% 5%;
+    margin-left: 3em;
+    background-color: darkred;
+    color: whitesmoke;  
+}
+
+footer {
+    margin-top: 38em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 13em;
+    width: 32em;
+    color: darkgreen;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+/*circle of letters*/
+#lA {
+    transform: translate(9.8em)
+}
+#lB {
+    transform: translate(12.4em,-2.4em)
+}
+#lC {
+    transform: translate(14.8em,-4.3em)
+}
+#lD {
+    transform: translate(17.1em,-5.6em)
+}
+#lE {
+    transform: translate(18.9em,-6.3em)
+}
+#lF {
+    transform: translate(20.2em,-6.6em)
+}
+#lG {
+    transform: translate(20.8em,-6.6em)
+}
+#lH {
+    transform: translate(21em,-6.5em)
+}
+#lI {
+    transform: translate(20.3em,-6.5em)
+}
+#lJ {
+    transform: translate(19em,-6.5em)
+}
+#lK {
+    transform: translate(17.3em,-7em)
+}
+#lL {
+    transform: translate(15.4em,-7.8em)
+}
+#lM {
+    transform: translate(13.2em,-9.1em)
+}
+#lN {
+    transform: translate(10.7em,-10.9em)
+}
+#lÑ {
+    transform: translate(8.2em,-13.4em)
+}
+#lO {
+    transform: translate(5.6em,-16.4em)
+}
+#lP {
+    transform: translate(3.3em,-20em)
+}
+#lQ {
+    transform: translate(1.4em,-24.3em)
+}
+#lR {
+    transform: translate(0.1em,-29.1em)
+}
+
+#lS {
+    transform: translate(-1em,-34.1em)
+}
+#lT {
+    transform: translate(-1.7em,-39.3em)
+}
+#lU {
+    transform: translate(-1.6em,-44.5em)
+}
+#lV {
+    transform: translate(-0.8em,-49.6em)
+}
+#lW {
+    transform: translate(0.7em,-54.3em)
+}
+#lX {
+    transform: translate(2.5em,-58.9em)
+}
+
+#lY {
+    transform: translate(4.7em,-63em)
+}
+#lZ {
+    transform: translate(7.2em,-66.6em)
+}
+
+
+
+
+
+
+
